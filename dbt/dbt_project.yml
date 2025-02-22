@@ -1,0 +1,11 @@
+name: 'fraude_credito'
+version: '1.0'
+
+profile: 'fraude_credito'
+
+source-paths: ["models"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
