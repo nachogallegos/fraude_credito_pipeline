@@ -9,3 +9,12 @@ target-path: "target"
 clean-targets:
   - "target"
   - "dbt_modules"
+
+# Conexión a BigQuery
+outputs:
+  dev:
+    type: bigquery
+    project: deteccion-fraude-transacciones
+    dataset: fraude_credito
+    threads: 1
+    keyfile: "ruta/a/tu/archivo.json"
